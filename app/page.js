@@ -135,14 +135,16 @@ export default function Home() {
           label="Search Items"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
+          sx={{ width: '550px' }}
         />
         <Button
           variant="contained"
-          onClick={() => setSearchQuery("")} // Clear search query on button click
+          onClick={() => setSearchQuery("")} 
         >
           Clear
         </Button>
       </Stack>
+      
       <Box border="1px solid #333">
         <Box 
           width="800px" 
